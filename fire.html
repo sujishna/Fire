@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fire.css">
+</head>
+<body>
+    <div class="text">
+        <h2 contenteditable="true">Fire</h2>
+        <audio autoplay="" loop="" src="BTS-Fire-(HiphopKit.com).mp3"></audio>
+    </div>
+    <svg>
+        <filter id="fire">
+            <feTurbulence id="turbulance" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.3" repeatCount="indefinite"></animate>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="25"></feDisplacementMap>
+        </filter>
+    </svg>
+    
+</body>
+</html>
